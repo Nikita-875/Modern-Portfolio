@@ -1,12 +1,12 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "portfolio UI",
+  "description": "portfolio project",
   "main": "index.js",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive"
-    },
-  "author": "Nikita saxena",
+  },
+  "author": "Nikita Saxena",
   "license": "MIT",
   "dependencies": {
     "node-sass": "^4.12.0"
