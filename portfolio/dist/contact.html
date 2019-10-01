@@ -9,8 +9,15 @@
       crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
     <title>Contact Me</title>
+
+    
 </head>
 <body>
+    <script>
+        function redirect()
+        { window.location="form.html" }
+    </script>             
+            
    <header> 
        <div class="menu-btn">
            <div class="btn-line"></div>
@@ -60,10 +67,11 @@
         You Can Reach Me Through
        </h2>
        <div class="boxes">
-          <div>
+          <div onclick="redirect()">
              <span class="text-secondary">Email:</span>
              nikitasaxena1875@gmail.com
           </div>
+          
           <div>
                 <span class="text-secondary">Phone:</span>
                 83xxxxxxx10
