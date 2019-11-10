@@ -3,6 +3,16 @@
 
 }
 
+
+.alert{
+    text-align: center;
+    padding:10px;
+    background:#79c879;
+    color:#fff;
+    margin-bottom:10px;
+    display:none;
+  }
+  
 body{
     background: #444;
     color: #eece1a;
@@ -26,7 +36,7 @@ ul{
     text-align: center;
 }
 .brand span{
-    color: rgb(0, 0, 0);
+    color: #fff;
 }
 
 .wrapper{

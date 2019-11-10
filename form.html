@@ -7,7 +7,7 @@
     <title>Contact Form</title>
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css" integrity="sha256-a2tobsqlbgLsWs7ZVUGgP5IvWZsx8bTNQpzsqCSm5mk=" crossorigin="anonymous" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="container">
@@ -23,34 +23,39 @@
             </div>
             <div class="contact">
                 <h3>Email us</h3>
-                <form>
+                <!-- TODO  - validation -->
+                <div class="alert">Your message has been sent</div>
+                <form id="contactform">
                     <p>
                         <label>Name</label>
-                        <input type="text" name="name"> 
+                        <input type="text" name="name" id="name"> 
                     </p>
                     <p>
                         <label>Company</label>
-                        <input type="text" name="Company"> 
+                        <input type="text" name="Company" id="company"> 
                     </p>
                     <p>
                         <label>Email</label>
-                        <input type="text" name="Email"> 
+                        <input type="text" name="Email" id="email"> 
                     </p>
                     <p>
                         <label>Phone Number</label>
-                        <input type="text" name="phone"> 
+                        <input type="text" name="phone" id="phone"> 
                     </p>
                     <p class="full">
                         <label>Message</label>
-                        <textarea name="message" rows="5"></textarea> 
+                        <textarea name="message" rows="5" id="message"></textarea> 
                      </p>
                      <p class="full">
-                         <button>Submit</button>
+                        <button type="submit" id="submit">Submit</button>
                      </p>
                 </form>
             </div>
 
         </div>
     </div>
+
+<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script src="js/connect.js"></script>
 </body>
 </html>
